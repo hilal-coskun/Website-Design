@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+.container {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+}
+
+header {
+    background-image: url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1147&q=80");
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: calc(100vh - 102px);
+}
+
+.content {
+    font-size: 2rem;
+    margin: auto;
+    max-width: 100%;
+    max-width: 100%;
+}
+
+.content h1 {
+    color:#08437a;
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color:#08437a;
+    opacity: .7;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+
+}
+
+footer {
+    background-color: rgb(5, 5, 19);
+    color: #fff;
+    padding: 1rem;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer strong {
+    color: #08437a;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width:700px){
+    .content{
+        margin: 2rem auto 0;
+        font-size: 1.4rem;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-self: flex-end;
+    }
+
+    nav li:not(:last-child){
+        margin: 1rem;
+    }
+
+    nav .highlight{
+        display: none;    
+    }
+
+    footer ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer li{
+        margin: 1rem;
+        text-align: center;
+    }
+}
